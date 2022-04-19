@@ -16,15 +16,20 @@ struct Complex {
 	Complex delenie(Complex n1);
 	void print();
 	float mod();
-	Complex(double valre, double valim)
+	Complex(double valre = 4, double valim = -2)
 	{
 		re = valre;
 		im = valim;
 	}
-	//~Complex()
-//	{
-	//	std::cout << "Destructor";
-	//}
+	Complex(const Complex& obj)
+	{
+		re = obj.re;
+		im = obj.im;
+	}
+	~Complex()
+	{
+		//std::cout << "Destructor" << std::endl;
+	}
 };
 
 

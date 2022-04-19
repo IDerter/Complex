@@ -24,7 +24,7 @@ int main()
     float re = 0;
     float im = 0;
     string str;
-    //s1.open("D:\\complex.txt");
+    s1.open("D:\\complex.txt");
     s1 >> n;
     cout << n << endl;
     vector <Complex> v1;
